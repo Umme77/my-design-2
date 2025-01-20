@@ -130,9 +130,20 @@ main > section{
     margin-top: -20px;
     margin-bottom: 30px;
 }
-
-
-
+/* Our Sponspors style */
+.sponsor-info{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+}
+.sponsor-companies img{
+    filter:grayscale(100%);
+}
 
 
 
@@ -152,7 +163,7 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .teams-img, .facts-container{
+    .teams-img, .facts-container, .sponsor-companies{
         grid-template-columns: 1fr;
     }
     .our-features{
@@ -162,6 +173,10 @@ main > section{
         justify-items: center;
         gap: 24px;
     }
+     .sponsor-companies{
+        justify-items: center;
+        gap: 40px;
+     }
 }
 /* medium size design */
 @media screen and (min-width:577px) and (max-width:992px) {
